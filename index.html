@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, width=device-width">
+        <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet">
+
+        <link href="styles/main.css" rel="stylesheet">
+
+        <script src="cordova.js"></script>
+        <script src="kendo/js/jquery.min.js"></script>
+        <script src="kendo/js/kendo.mobile.min.js"></script>
+        <script src="app.js"></script>
+    </head>
+    <body>
+        <div data-role="view" data-title="FoxitPDF">
+            <div data-role="header">
+                <div data-role="navbar">
+                    <span data-role="view-title"></span>
+                </div>
+            </div>
+            <div data-role="content">
+                <div id="loader" style="visibility:hidden">Downloading...</div>
+                <div class="actions">
+                    <a data-role="button" class="action" data-click="openPDF">Open PDF</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
